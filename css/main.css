@@ -5,11 +5,22 @@
     margin: 0;
 }
 
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --primaryColor: #90ba14;
     --blackColor: #000;
     --whiteColor: #fff;
     --lightColor: #eee;
+}
+
+.container {
+    overflow: hidden;
 }
 
 body {
