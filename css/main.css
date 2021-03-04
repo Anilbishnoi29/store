@@ -606,7 +606,13 @@ button {
     border-bottom: 1px solid #8a8a8a;
     padding: 0.7rem 0;
 }
-
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #90ba14;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #90ba1452;
+}
 
 /* media */
 
