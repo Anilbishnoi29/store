@@ -26,8 +26,33 @@
                 <div class="col-md-10 col-sm-12 col-12 col-lg-10 col-xl-8 m-auto text-center">
                     <h2 class="mb-4">Shopping Cart </h2>
                     <div id="shoppingItem">
-                        <p class="p-2">Your cart is currently empty.</p>
-                        <p class="p-2"><a class="p-2 d-flex  align-items-center text-primaryColor justify-content-center" href="shop.html">Continue browsing </a>.</p>
+                        <div id="emptyCart">
+                        </div>
+                        <div class="p-2">
+                            <!-- items -->
+                            <ul id="itemsList">
+                                <li id="shoppingBookList" class="row d-flex justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <div id="itemImg"><img src="images/edit2_1_medium.webp" alt="" /></div>
+                                        <div id="itemAuthor">STEPHEN DOE</div>
+                                        <p>eBook [EN] </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="priceOfItem">$45</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- items end -->
+
+                            <!-- total -->
+                            <div id="totalOf">
+                                <div id="totalOfItem" class="text-right">
+                                    <span id="sum"> $45</span>
+                                    <p>Shipping, taxes, and discounts will be calculated at checkout.</p>
+                                    <button type="submit" class="btn mt-3 primaryColor ">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +108,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script>
+        function emptyList() {
+            var shoppingItems = document.querySelector("#items");
+
+        }
+    </script> -->
     <script src="js/main.js"></script>
+    <script src="js/addItem.js"></script>
+
+
 
 </body>
 
